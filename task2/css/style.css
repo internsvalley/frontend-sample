@@ -1,0 +1,348 @@
+/* Golobal Configration */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+}
+
+
+
+
+
+/* Header Section Start ==============> */
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 5%;
+}
+
+.header .title{
+    cursor: pointer;
+}
+
+.header .arrow {
+    font-size: 40px;
+    font-family: monospace;
+    position: relative;
+    top: 5px;
+    color: #435dfa;
+}
+
+/* <============== Header Section end */
+
+
+
+
+
+
+/* Content Section Start */
+
+.content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    text-align: left;
+}
+
+
+
+
+/* Content header title and description Start ==========> */
+
+.header-content .name {
+    margin: 30px 0;
+    font-size: 8vw;
+    font-weight: 500;
+}
+
+.header-content .description {
+    font-size: 5vw;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #9c9c9c;
+}
+
+
+/* <=========== Content header title and description End */
+
+
+
+
+
+
+/* Contnent Time Section Start ==================>  */
+
+.time-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 6% 0;
+}
+
+
+.remaining-time {
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.remaining-time .remaining-svg {
+    display: block;
+    margin: auto;
+}
+
+.remaining-time .title {
+    position: relative;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+    color: #ababab;
+}
+
+.remaining-time .speed {
+    font-size: 5vw;
+    text-align: center;
+    margin: 15px 0;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+}
+
+.remaining-base {
+    fill: none;
+    stroke: #e8e8f0;
+    stroke-width: 4px
+}
+
+.remaining-progress {
+    fill: none;
+    stroke: #f3be56;
+    stroke-width: 4px;
+    transition: stroke-dashoffset 0.7s;
+}
+
+/* <================= Contnent Time Section End  */
+
+
+
+
+
+
+/* Contnent avg Speed Section Start  ===============> */
+
+.avg-speed {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.avg-speed .title {
+    position: relative;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #ababab;
+}
+
+.avg-speed .speed {
+    font-size: 5vw;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.avg-speed i {
+    font-size: 3vw;
+    color: #ababab;
+}
+
+.speedo {
+    height: 78px;
+    margin: 10px auto 10px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+h3 .speedo {
+    width: 210px;
+    height: 105px;
+    margin: 10px auto 10px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.face {
+    border: solid 3px;
+    border-radius: 50%;
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
+
+.face.face-danger {
+    border-color: #e7e7ef;
+}
+
+.needle {
+    transform: rotate(35deg);
+    width: 4px;
+    height: 40px;
+    background: #fc517b;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    display: inline-block;
+    left: 42px;
+    position: absolute;
+    top: 11px;
+    transform-origin: bottom;
+}
+
+.ball {
+    background: #fc517b;
+    display: block;
+    position: absolute;
+    bottom: 34px;
+    right: 37px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+/* <============== Contnent avg Speed Section End */
+
+
+
+
+
+
+/* Content Map Location Start  ===============> */
+
+.location-section {
+    position: relative;
+}
+
+.location-section .circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #2941e9;
+    border-radius: 50%;
+}
+
+.location-section .line {
+    width: 79vw;
+    background: #d6d6d6;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 33px;
+    left: 20px;
+}
+
+.location-section .process-line {
+    width: 50vw;
+    background: #2941e9;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 33px;
+    left: 20px;
+}
+
+.location-section .icon-pin {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+/* <================ Content Map Location End */
+
+
+
+
+
+
+
+/* Content Button Location Start ===============> */
+
+.btn {
+    display: inline-block;
+    height: 10vh;
+    margin: 6vh 3vh;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: #2b42ea;
+}
+
+.btn img {
+    width: 40px;
+}
+
+/* <================ Content Button Location End */
+
+
+
+
+/* Content Section End */
+
+
+@media only screen and (max-width: 1360px) {
+    .location-section .line {
+        width: 85vw;
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    .location-section .line {
+        width: 84vw;
+    }
+}
+
+
+@media only screen and (max-width: 880px) {
+    .location-section .line {
+        width: 82vw;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .location-section .line {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .location-section .line {
+        width: 77vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .location-section .line {
+        width: 74vw;
+    }
+}
+
+
+@media only screen and (max-width: 350px) {
+    .location-section .line {
+        width: 71vw;
+    }
+}

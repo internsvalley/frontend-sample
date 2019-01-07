@@ -1,0 +1,19 @@
+<div class="col-xs-12 col-md-6 col-lg-4" style="display: inline-block;" *ngFor="let card of cards">
+  <figure class="card card-product">
+		<div class="img-wrap"><img src="{{ card.image }}"></div>
+		<figcaption class="info-wrap">
+				<h4 class="title">Patagonia Netgear Samsung Bulk Bla Viel
+          Spielzeug Lorem Ipsum….</h4>
+				<div class="rating-wrap">
+          <div class="price-wrap h5">
+            <del class="price-old">399€</del><span class="price-new">289€</span> 
+          </div> <!-- price-wrap.// -->
+          <div class="label-rating"><img src="{{ card.icon }}" /> {{ card.status }}</div>
+          <div class="label-rating"><span>8</span> Units</div>
+				</div> <!-- rating-wrap.// -->
+		</figcaption>
+		<div class="bottom-wrap">
+			<button class="btn btn-primary btn-block">View Details</button>	
+		</div> <!-- bottom-wrap.// -->
+	</figure>
+</div>

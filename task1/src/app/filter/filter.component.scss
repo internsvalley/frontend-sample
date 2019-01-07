@@ -1,0 +1,55 @@
+@import '../../styles.scss';
+
+.filter {
+    width: 120px;
+    border-radius: 0;
+    margin: 25px 45px 10px;
+}
+
+.notify {
+    border-radius: 0;
+    margin: 25px 45px 10px;
+    color: $white;
+    float: right;
+}
+
+
+.modal-body {
+    padding: 2rem;
+    button:focus {
+        outline: none
+      }
+    .close {
+        font-size: 30px;
+        font-weight: 800;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+}
+
+.modal-footer {
+    flex-direction: column;
+    border-top: none;
+    width: 80%;
+    right: 10%;
+    left: 10%;
+    position: relative;
+    &> :not(:last-child) {
+        margin-right: 0;
+    }
+    
+    &> :not(:first-child) {
+        margin-left: 0;
+    }
+    
+}
+
+.btn-primary {
+    color: $white;
+}
+
+.btn-primary,
+.btn-secondary {
+    font-weight: 500;
+}

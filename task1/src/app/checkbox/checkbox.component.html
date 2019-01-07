@@ -1,0 +1,9 @@
+<div class="title">{{ title }}</div>
+<div *ngFor="let category of categories; let i = index" class=" sub-title">
+  <div class="custom-checkbox">
+    <input class="custom-control-input" type="checkbox" value="" id="{{category + i }}">
+    <label class="custom-control-label" for="{{category + i }}">
+      {{ category }}
+    </label>
+  </div>
+</div>

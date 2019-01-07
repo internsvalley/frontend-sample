@@ -1,0 +1,21 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+task1/dist
+task1/tmp
+task1/out-tsc
+task1/app-builds
+task1/release
+task1/src/**/*.js
+task1/*.js.map
+
+#karma
+!/src/karma.conf.js
+
+# dependencies
+task1/node_modules
+
+# misc
+
+task1/npm-debug.log
+task1/package-lock.json

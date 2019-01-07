@@ -1,0 +1,98 @@
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+</header>
+
+<section class="carousel">
+  <app-carousel></app-carousel>
+</section>
+
+<section class="d-md-none">
+  <div class="notify">
+      NEW LOTS POSTED DAILY. CLICK HERE TO GET
+      NOTIFIED!
+  </div>
+</section>
+
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <app-filter class="filter-content"></app-filter>
+      <div class="col-md-12">
+        <app-card [cards]="cards"></app-card>
+      </div>
+    </div>
+  </div>
+  <nav class="paginate">
+    <ul class="pagination">
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next ></a></li>
+    </ul>
+  </nav>
+</section>
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="brand">Brand</div>
+      </div>
+      <div class="col-md-12">
+        <div class="inblock col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <h1>Company</h1>
+          <ul>
+            <li>About Us</li>
+            <li>Sign Up / Log In</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="inblock col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <h1>Information</h1>
+          <ul>
+            <li>Inventory Notifications</li>
+            <li>Terms & Conditions</li>
+            <li>Imprint</li>
+          </ul>
+        </div>
+        <div class="inblock col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          <h1>Contact</h1>
+          <ul>
+            <li>b2b@brand.com</li>
+            <li>skype: b2b_brand</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
