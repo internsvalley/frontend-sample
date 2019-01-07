@@ -1,0 +1,73 @@
+@import '../../styles.scss';
+
+.card-product {
+    margin: 15px 15px 5px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border-radius: 5px;
+    .img-wrap {
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+        position: relative;
+        height: 220px;
+        text-align: center;
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+    .rating-wrap {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        .price-wrap {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            span {
+                color: $primary;
+                font-weight: 500;
+            }
+        }
+    }
+    .info-wrap {
+        overflow: hidden;
+        padding: 15px;
+        border-top: 1px solid #eee;
+    }
+    .bottom-wrap {
+        padding: 7% 20%;
+        button {
+            color: $white;
+            font-weight: 500;
+            border-radius: 6px;
+            height: 45px;
+        }
+    }
+    .price-old {
+        color: #999;
+        font-size: 17px;
+        text-align: center;
+    }
+}
+
+.label-rating {
+    margin-right: 10px;
+    vertical-align: middle;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-width: 30px;
+        margin-right: 6px;
+    }
+    span {
+        margin-right: 5px;
+        font-size: 25px;
+    }
+}

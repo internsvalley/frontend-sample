@@ -1,0 +1,21 @@
+<button class="btn filter btn-outline-primary" (click)="open(content)">Filter</button>
+<button class="d-none d-md-block btn notify btn-primary">NEW LOTS POSTED DAILY. CLICK HERE TO GET
+    NOTIFIED!</button>
+<ng-template #content let-modal>
+  <div class="modal-body">
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <form>
+      <app-checkbox [filter]="categories.category" title="category"></app-checkbox>
+      <hr>
+      <app-checkbox [filter]="categories.condition" title="condition"></app-checkbox>
+      <hr>
+      <app-checkbox [filter]="categories.price" title="price"></app-checkbox>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary btn-lg btn-block">Apply</button>
+    <button type="button" class="btn btn-secondary btn-lg btn-block" (click)=" modal.close('Save click')">Cancel</button>
+  </div>
+</ng-template>

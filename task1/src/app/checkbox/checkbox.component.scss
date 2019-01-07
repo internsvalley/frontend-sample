@@ -1,0 +1,21 @@
+@import '../../styles.scss';
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.custom-checkbox {
+  position: relative;
+  right: -25px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: $primary;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: $white;
+  background-color: $primary;
+}

@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+$theme-colors: (primary: #ff9934,
+secondary: #939393) !default;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+/* Golbal Configrations */
+.modal-backdrop.show {
+  opacity: 0;
+}
+
+:host ::ng-deep *:focus {
+  outline: none
+}
+
+.inblock {
+  display: inline-block;
+}
+
+
+/* Colors */
+
+$primary: #ff9934;
+$secondary: #939393;
+$white: #ffffff;
+$background: #f8fbff;

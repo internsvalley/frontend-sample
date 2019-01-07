@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="title">New York <i class="arrow">&#9662;</i></div>
+    </header>
+
+    <section class="content">
+        
+        <div class="header-content text-center">
+            <h3 class="name">
+                Hello Matthew,
+            </h3>
+            <p class="description">
+                This is your driver. i'm on my way!
+            </p>
+            <p class="description">
+                There is a trafic jam causing delay.
+            </p>
+        </div>
+
+        <div class="time-section">
+
+            <div class="remaining-time">
+                <svg class="remaining-svg" width="100" viewBox="0 0 220 220">
+                    <g transform="translate(110,110)">
+                        <circle r="100" class="remaining-base"></circle>
+                        <g transform="rotate(-90)">
+                            <circle r="100" class="remaining-progress" style="stroke-dasharray: 628.319; stroke-dashoffset: -1130.97;"></circle>
+                        </g>
+                    </g>
+                </svg>
+                <div class="title">
+                    Avg Speed
+                </div>
+                <span class="speed">
+                    13:17
+                </span>
+            </div>
+
+            <div class="avg-speed">
+                <div class="speedo">
+                    <div class="face face-danger">
+                        <div class="needle"></div>
+                        <span class="ball"></span>
+                    </div>
+                </div>
+                <div class="title">
+                    Avg Speed
+                </div>
+                <span class="speed">
+                    47
+                    <i>mph</i>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="location-section">
+            <span class="circle"></span>
+            <span class="line"></span>
+            <span class="process-line"></span>
+            <span class="icon icon-pin"></span>
+        </div>
+
+        <button class="btn"><img src="images/map.jpg" /></button>
+
+    </section>
+    
+</body>
+
+</html>
